@@ -19,6 +19,43 @@
 				border-top:1px solid #dedede;
 			}
 
+			h1,h2,h3,h4,h5,h6{
+				font-weight: normal;
+			}
+
+
+			ul,ol{
+				list-style: none;
+			}
+
+			main{
+				margin-top:-340px;
+			}
+			
+			main .button{
+				color:#515761;
+				font-size:14px;
+				padding:21px 55px;
+				line-height:16px;
+				border:1px #cbcdcf solid;
+				display:inline-block;
+				/* margin-left:auto;
+				margin-right: auto; */
+				border-radius: 2px;
+				font-weight:bold;
+				margin: 31px 0;
+				transition: box-shadow 0.3s;
+			}
+
+			main .button:hover{
+				box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.4);
+			}
+
+
+			main .button-wrapper{
+				text-align: center;
+			}
+
 			.topNavBar .logo{
 				font-size: 24px;
 				font-family:"arial black";
@@ -101,11 +138,12 @@
 			}
 
 			.usercard{
-				border:1px solid red;
+				/* border:1px solid red; */
 				max-width: 930px;
 				margin-left:auto;
 				margin-right:auto;	
 				background-color: #ffffff;
+				box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.4);
 			}
 
 			.usercard .welcome{
@@ -198,4 +236,164 @@
 				height:30px;
 				fill:white;
 				vertical-align:top;
+				/* vertical-align:middle; */
+			}
+
+			.introduction{
+				max-width: 930px;
+				margin-left:auto;
+				margin-right:auto;
+				text-align:center;
+			}
+
+			section.skills,section.portfolio{
+				max-width:940px;
+				margin-left:auto;
+				margin-right:auto; 
+				margin-top:60px;
+				/* border:1px solid black; */
+			}
+
+			section.skills>h2,section.portfolio>h2{
+				color: #3d4451;
+				font-size: 34px;
+				line-height: 1.2;
+				font-weight: 600;
+				text-align:center;
+			}
+
+			section.skills ol{
+				box-shadow: 0px 1px 14px 0px rgba(0,0,0,0.4);
+				background-color: white;
+				padding:42px 50px 10px;
+				margin:30px;
+			}
+
+			section.skills ol li{
+				float:left;
+				width:48%;
+				/* box-sizing: border-box; */
+				/* padding-right: 40px; */
+			}
+
+			section.skills ol li:nth-child(even){
+				float:right;
+				width:48%;
+				/* box-sizing: border-box; */
+				/* padding-right: 40px; */
+			}
+
+			section.skills .progressBar{
+				height:6px;
+				background-color: #f8e2e2;
+				border-radius: 2px;
+				margin:4px 0 40px;
+
+			}
+
+			section.skills .progressBar .progress{
+				height:100%;
+				background-color: #da6f6f;
+				width: 50%;
+				border-radius: 2px;
+			}
+
+			section.skills>li>h3{
+				font-size: 14px;
+				line-height: 1.1;
+				padding-right: 40px;
+			}
+
+			section.portfolio{
+				text-align:center;
+			}
+
+			section.portfolio nav{
+				text-align:center;
+			}
+
+			section.portfolio ol{
+				/* border:1px solid red; */
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			section.portfolio ol li{
+				float: left;
+				margin-left: 40px;
+				cursor: pointer;
+			}
+
+			section.portfolio ol li:nth-child(1){
+				margin-left: 0;
+			}
+
+			section.portfolio nav {
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 32px;
+			}
+
+			section.portfolio nav .bar {
+				height:5px;
+				background-color: white;
+				border-radius: 2px;
+				margin-top: 5px;
+				margin-bottom: 40px;
+			}
+
+			section.portfolio nav .bar .barInner {
+				height: 100%;
+				width:20%;
+				background-color:#e6686a ;
+				border-radius: 2px;
+			}
+
+			section.portfolio nav .bar .barInner {
+				height: 100%;
+				background-color:#e6686a ;
+				border-radius: 2px;
+				transition: all 0.3s;
+			}
+
+			section.portfolio nav .bar.state-1 .barInner {
+				margin-left:0;
+				width:30%;
+			}
+
+			section.portfolio nav .bar.state-2 .barInner {
+				margin-left:30%;
+				width:30%;
+			}
+
+			section.portfolio nav .bar.state-3 .barInner {
+				margin-left:60%;
+				width:40%;
+			}
+
+			section.portfolio .works{
+				position: relative;
+				height:576px;
+				border:1px solid red;
+			}
+
+			section.portfolio .works .big,
+			section.portfolio .works .small
+			{
+				position:absolute;
+			}
+
+			section.portfolio .works .big{
+				top:0;
+				left:0;
+			}
+
+			section.portfolio .works .smalltop{
+				top:0;
+				left:640px;
+			}
+
+			section.portfolio .works .smallbottom{
+				top:297px;
+				left:640px;
 			}
