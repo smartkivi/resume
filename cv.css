@@ -374,7 +374,8 @@
 			section.portfolio .works{
 				position: relative;
 				height:576px;
-				border:1px solid red;
+				/* border:1px solid red; */
+				margin-bottom: 20px;
 			}
 
 			section.portfolio .works .big,
