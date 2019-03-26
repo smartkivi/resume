@@ -376,7 +376,7 @@
 
 			}
 
-			section.skills.offset .progress{
+			section.skills.offset .progressBar .progress{
 				transform: translateX(-100%);
 			}
 
